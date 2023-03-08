@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-# Author - Tolulope Fakunle
-
 def islower(c):
-    """Function checks for lowercase characters."""
-    if ord(c) >= 97 and ord(c) <= 122:
-        return True
-    else:
+    if ord(c) < 91:
         return False
+    elif ord(c) > 96:
+        return True
